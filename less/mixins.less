@@ -1,1 +1,14 @@
 // Mixins in here
+.custom-btn (@font, @bgColor) {
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: @font;
+    background-color: @bgColor;
+}
+
+.btn {
+    .custom-btn (20px, #4ABDAA)
+}
